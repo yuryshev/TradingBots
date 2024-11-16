@@ -1,4 +1,4 @@
-name: Deploy exchangeshealthcheck
+name: Deploy ExchangesHealthCheck Function App
 on:
   workflow_dispatch:
   
