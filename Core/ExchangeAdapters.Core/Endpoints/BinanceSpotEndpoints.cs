@@ -1,10 +1,10 @@
-﻿namespace ExchangeAdapters.Core.Adapters
+﻿namespace ExchangeAdapters.Core.Endpoints
 {
-    public class BinanceSpotAdapter : IBinanceSpotAdapter
+    public class BinanceSpotEndpoints : IBinanceSpotEndpoints
     {
         private readonly HttpClient _httpClient;
 
-        public BinanceSpotAdapter(
+        public BinanceSpotEndpoints(
             HttpClient httpClient
             )
         {

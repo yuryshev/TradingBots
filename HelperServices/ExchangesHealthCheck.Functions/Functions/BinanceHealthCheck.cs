@@ -1,4 +1,4 @@
-using ExchangeAdapters.Core.Adapters;
+using ExchangeAdapters.Core.Endpoints;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
@@ -7,10 +7,10 @@ namespace ExchangesHealthCheck.Functions.Functions
 {
     public class BinanceHealthCheck
     {
-        private readonly IBinanceSpotAdapter _adapter;
+        private readonly IBinanceSpotEndpoints _adapter;
 
         public BinanceHealthCheck(
-            IBinanceSpotAdapter adapter
+            IBinanceSpotEndpoints adapter
             )
         {
             _adapter = adapter;
