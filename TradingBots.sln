@@ -11,13 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelperServices", "HelperSer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AnalyticsServices", "AnalyticsServices", "{6CA892BB-44C9-4751-99E2-704727805407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeAdapters.Core", "Core\ExchangeAdapters.Core\ExchangeAdapters.Core.csproj", "{536550DA-719B-4A5B-BC08-12D453570E93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeAdapters.Core", "Core\ExchangeAdapters.Core\ExchangeAdapters.Core.csproj", "{536550DA-719B-4A5B-BC08-12D453570E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeAdapters.Tests", "Core\ExchangeAdapters.Tests\ExchangeAdapters.Tests.csproj", "{5E4AE004-675E-411D-B99C-318FC14126CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeAdapters.Tests", "Core\ExchangeAdapters.Tests\ExchangeAdapters.Tests.csproj", "{5E4AE004-675E-411D-B99C-318FC14126CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangesHealthCheck.Functions", "HelperServices\ExchangesHealthCheck.Functions\ExchangesHealthCheck.Functions.csproj", "{6B9382BC-5087-4675-969C-4107BF36F61A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangesHealthCheck.Functions", "HelperServices\ExchangesHealthCheck.Functions\ExchangesHealthCheck.Functions.csproj", "{6B9382BC-5087-4675-969C-4107BF36F61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangesHealthCheck.Tests", "HelperServices\ExchangesHealthCheck.Tests\ExchangesHealthCheck.Tests.csproj", "{B305FEAD-D379-48CB-B018-12746DF5D3E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangesHealthCheck.Tests", "HelperServices\ExchangesHealthCheck.Tests\ExchangesHealthCheck.Tests.csproj", "{B305FEAD-D379-48CB-B018-12746DF5D3E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinanceSpotGridBot.Functions", "StrategiesServices\BinanceSpotGridBot.Functions\BinanceSpotGridBot.Functions.csproj", "{FAA69BFB-38B6-46F2-A354-8899B14E3DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinanceSpotGridBot.Tests", "StrategiesServices\BinanceSpotGridBot.Tests\BinanceSpotGridBot.Tests.csproj", "{C7AD2262-8A95-4223-8688-86CA648A7E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangesDataExtraction.Functions", "HelperServices\ExchangesDataExtraction.Functions\ExchangesDataExtraction.Functions.csproj", "{38331BD6-4F94-4AF8-8023-0D3CAF207D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangesDataExtraction.Tests", "HelperServices\ExchangesDataExtraction.Tests\ExchangesDataExtraction.Tests.csproj", "{B283563C-70A6-44A1-B0C2-E633FF68ADD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +49,22 @@ Global
 		{B305FEAD-D379-48CB-B018-12746DF5D3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B305FEAD-D379-48CB-B018-12746DF5D3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B305FEAD-D379-48CB-B018-12746DF5D3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA69BFB-38B6-46F2-A354-8899B14E3DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA69BFB-38B6-46F2-A354-8899B14E3DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA69BFB-38B6-46F2-A354-8899B14E3DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA69BFB-38B6-46F2-A354-8899B14E3DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7AD2262-8A95-4223-8688-86CA648A7E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AD2262-8A95-4223-8688-86CA648A7E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AD2262-8A95-4223-8688-86CA648A7E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AD2262-8A95-4223-8688-86CA648A7E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38331BD6-4F94-4AF8-8023-0D3CAF207D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38331BD6-4F94-4AF8-8023-0D3CAF207D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38331BD6-4F94-4AF8-8023-0D3CAF207D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38331BD6-4F94-4AF8-8023-0D3CAF207D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B283563C-70A6-44A1-B0C2-E633FF68ADD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B283563C-70A6-44A1-B0C2-E633FF68ADD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B283563C-70A6-44A1-B0C2-E633FF68ADD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B283563C-70A6-44A1-B0C2-E633FF68ADD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +74,10 @@ Global
 		{5E4AE004-675E-411D-B99C-318FC14126CA} = {CDC4050B-A5B7-4195-A8C5-889A28937611}
 		{6B9382BC-5087-4675-969C-4107BF36F61A} = {F7ABFDDD-7489-4AB1-BECF-9727B23194A5}
 		{B305FEAD-D379-48CB-B018-12746DF5D3E4} = {F7ABFDDD-7489-4AB1-BECF-9727B23194A5}
+		{FAA69BFB-38B6-46F2-A354-8899B14E3DB7} = {1A9EF636-B112-4294-BB7B-7025D5F9A044}
+		{C7AD2262-8A95-4223-8688-86CA648A7E58} = {1A9EF636-B112-4294-BB7B-7025D5F9A044}
+		{38331BD6-4F94-4AF8-8023-0D3CAF207D27} = {F7ABFDDD-7489-4AB1-BECF-9727B23194A5}
+		{B283563C-70A6-44A1-B0C2-E633FF68ADD8} = {F7ABFDDD-7489-4AB1-BECF-9727B23194A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D7BF990-A9C3-4189-9678-9515FC512B96}

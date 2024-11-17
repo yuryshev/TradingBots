@@ -19,7 +19,7 @@ namespace ExchangesHealthCheck.Functions.Functions
         [Function("BinanceHealthCheck")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
         {
-            bool res = await _adapter.Ping();
+            bool res = await _adapter.PingAsync();
 
             return new OkObjectResult(res);
         }
